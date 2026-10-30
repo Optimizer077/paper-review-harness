@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "policies": {
+    "standard": {
+      "id": "standard-v1",
+      "core_min_rating": 2,
+      "require_high_confidence_core": false,
+      "min_domain_score": 0,
+      "caps": {}
+    },
+    "aggressive": {
+      "id": "aggressive-v1",
+      "core_min_rating": 3,
+      "require_high_confidence_core": true,
+      "min_domain_score": 75,
+      "caps": {
+        "open_blocker": 39,
+        "core_severe": 49,
+        "core_below_target": 69,
+        "criterion_severe": 69,
+        "domain_severe": 59,
+        "domain_below_target": 74,
+        "core_confidence_low": 59,
+        "core_confidence_medium": 79
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "version": 2,
+  "rubric_id": "paper-writing-v2",
+  "profile": "empirical-ml",
+  "subject": {
+    "id": "manuscript-id",
+    "revision": "draft-1"
+  },
+  "reviewer": {
+    "id": "reviewer-id",
+    "type": "agent"
+  },
+  "evaluated_at": "2026-10-30",
+  "criteria": [
+    {
+      "id": "research-question",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "motivation-gap",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "contribution-calibration",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "literature-positioning",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "method-specification",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "design-validity",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "comparison-fairness",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "analysis-uncertainty",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "robustness-failures",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "claim-evidence-entailment",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "concept-definitions",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "notation-units",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "numbers-denominators",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "cross-section-alignment",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "title-abstract",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "introduction-logic",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "paragraph-sentence-logic",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "jargon-acronyms",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "reader-teachback",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "figures-tables",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "reproducibility-artifacts",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "limitations-transfer",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "ethics-disclosures",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    },
+    {
+      "id": "venue-compliance",
+      "status": "unassessed",
+      "rating": null,
+      "confidence": null,
+      "evidence": [],
+      "rationale": "Not yet inspected. Record the relevant manuscript/source evidence before choosing an anchor.",
+      "action": "Assess this criterion only when within the requested scope; keep unassessed if evidence is unavailable."
+    }
+  ],
+  "critical_blockers": [],
+  "strictness": "aggressive"
+}

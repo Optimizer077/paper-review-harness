@@ -1,0 +1,367 @@
+{
+  "version": 2,
+  "rubric_id": "paper-writing-v2",
+  "profile": "empirical-ml",
+  "strictness": "aggressive",
+  "subject": {
+    "id": "synthetic-arithmetic-demo",
+    "revision": "illustration-1"
+  },
+  "reviewer": {
+    "id": "illustrative-demo",
+    "type": "agent"
+  },
+  "evaluated_at": "2026-10-30",
+  "criteria": [
+    {
+      "id": "research-question",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / research-question",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "motivation-gap",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / motivation-gap",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "contribution-calibration",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / contribution-calibration",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "literature-positioning",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / literature-positioning",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "method-specification",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / method-specification",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "design-validity",
+      "status": "assessed",
+      "rating": 1,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / design-validity",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "comparison-fairness",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / comparison-fairness",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "analysis-uncertainty",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / analysis-uncertainty",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "robustness-failures",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / robustness-failures",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "claim-evidence-entailment",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / claim-evidence-entailment",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "concept-definitions",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / concept-definitions",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "notation-units",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / notation-units",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "numbers-denominators",
+      "status": "assessed",
+      "rating": 2,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / numbers-denominators",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "cross-section-alignment",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / cross-section-alignment",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "title-abstract",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / title-abstract",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "introduction-logic",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / introduction-logic",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "paragraph-sentence-logic",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / paragraph-sentence-logic",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "jargon-acronyms",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / jargon-acronyms",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "reader-teachback",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / reader-teachback",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "figures-tables",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / figures-tables",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "reproducibility-artifacts",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / reproducibility-artifacts",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "limitations-transfer",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / limitations-transfer",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "ethics-disclosures",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / ethics-disclosures",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    },
+    {
+      "id": "venue-compliance",
+      "status": "assessed",
+      "rating": 4,
+      "confidence": "high",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / venue-compliance",
+          "observation": "Invented example judgment to demonstrate arithmetic; not manuscript evidence."
+        }
+      ],
+      "rationale": "Illustrative anchor choice only; replace with inspected evidence for a real manuscript.",
+      "action": "Inspect the actual criterion and record real passage evidence."
+    }
+  ],
+  "critical_blockers": [
+    {
+      "id": "demo-blocker",
+      "criterion_id": "design-validity",
+      "description": "Fictional design flaw: the demo assumes evaluation data contaminated training. This is not a finding about a real paper.",
+      "status": "open",
+      "evidence": [
+        {
+          "locator": "Synthetic fixture / design-validity",
+          "observation": "Invented blocker demonstrates that a high mean does not remove a critical flaw."
+        }
+      ]
+    }
+  ]
+}

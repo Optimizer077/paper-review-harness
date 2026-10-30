@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "roles": [
+    {
+      "id": "argument",
+      "title": "Argument and contribution",
+      "instructions": "Identify the question, contribution type, gap and value from the manuscript. Test whether each central claim has sufficient support for its stated scope. Distinguish novelty from usefulness and identify the evidence needed to resolve a scientific blocker. Do not demand a new method or SOTA score for every contribution. For requested scoring, record evidence for mapped criteria: research-question, motivation-gap, contribution-calibration, literature-positioning, claim-evidence-entailment, cross-section-alignment, title-abstract, introduction-logic. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "abstract-introduction",
+      "title": "Title, abstract and introduction",
+      "instructions": "Inspect the title and abstract against the body and claim ledger; check task, study design, key result, comparator, uncertainty and essential qualification. Trace the introduction from specific problem through prior knowledge and a justified question to the contribution. Identify unsupported priority claims and important conditions missing from the headline. For requested scoring, record evidence for mapped criteria: research-question, cross-section-alignment, title-abstract, introduction-logic, paragraph-sentence-logic. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "methods",
+      "title": "Methods and reproducibility",
+      "instructions": "Review methods actually reported for this contribution type. Check assumptions, data provenance, independent sampling unit, splits, preprocessing, comparator eligibility, tuning, compute and reproducibility locators where applicable. For theory inspect definitions and theorem assumptions instead of demanding experiments. Never infer a procedure occurred because it is standard. For requested scoring, record evidence for mapped criteria: method-specification, design-validity, comparison-fairness, analysis-uncertainty, concept-definitions, notation-units, numbers-denominators, reproducibility-artifacts, ethics-disclosures. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "references",
+      "title": "Citations and prior work",
+      "instructions": "Inspect the actual relevant source passages where available, checking existence, version, accurate attribution and whether each passage supports the cited clause. Compare directly relevant alternatives and preserve contradictory evidence. Known citation IDs are not source verification. Mark inaccessible sources unverified, and do not fabricate a consensus or absence of prior work. For requested scoring, record evidence for mapped criteria: motivation-gap, literature-positioning, claim-evidence-entailment, introduction-logic. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "evidence",
+      "title": "Results and uncertainty",
+      "instructions": "Map central claims to actual displays, analyses or proofs; inspect denominators, metric directions, matched settings, independent runs, uncertainty definitions and effect sizes when applicable. Distinguish relative percentage change from percentage points, association from causation, and nonsignificance from equivalence. Propose only additional evidence that could change a central conclusion. For requested scoring, record evidence for mapped criteria: contribution-calibration, design-validity, comparison-fairness, analysis-uncertainty, robustness-failures, claim-evidence-entailment, notation-units, numbers-denominators, figures-tables, limitations-transfer. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "terminology",
+      "title": "Terms, acronyms and symbols",
+      "instructions": "Build or compare a concept ledger across sections. Check that canonical terms, permitted aliases, acronyms, symbols, dataset versions, units and meanings remain stable. Check abstract and body acronym introductions independently. Retain purposeful technical repetition, and flag ambiguities with exact conflicting passages rather than banning synonyms indiscriminately. For requested scoring, record evidence for mapped criteria: concept-definitions, notation-units, cross-section-alignment, jargon-acronyms. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "readability",
+      "title": "Blind reader understanding",
+      "instructions": "FIRST read only the manuscript, without the intended thesis, claim ledger or other reviews. Restate the question, mechanism, evidence, finding and scope, attaching manuscript passages and marking anything you cannot infer. THEN open the comparison context and identify mismatches with the author's intended meaning. Diagnose missing links, unexplained terms and competing interpretations. Do not optimize a readability score or merely polish words. For requested scoring, record evidence for mapped criteria: paragraph-sentence-logic, jargon-acronyms, reader-teachback. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "figures",
+      "title": "Figures, tables and captions",
+      "instructions": "When images/tables are actually accessible, inspect whether each display answers a question, labels units and panels, defines uncertainty and sampling units, and agrees with the text. Check axes, scales and comparators. If only captions or extracted text are available, explicitly limit the review and never claim visual inspection or data validation. For requested scoring, record evidence for mapped criteria: numbers-denominators, cross-section-alignment, figures-tables. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "limitations",
+      "title": "Scope, alternatives and limitations",
+      "instructions": "Inspect generalization conditions, plausible alternative explanations, null or conflicting findings, failure modes and study-design limits. Connect each material limit to what cannot be concluded. Check that the conclusion preserves those limits. Do not add hypothetical compliance barriers or generic harms unrelated to the actual study. For requested scoring, record evidence for mapped criteria: contribution-calibration, design-validity, robustness-failures, limitations-transfer, ethics-disclosures. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    },
+    {
+      "id": "venue",
+      "title": "Venue and study-design requirements",
+      "instructions": "Verify the exact venue/year/track/stage against current official sources and record URLs and date. Separate scientific quality, formal submission requirements and optional craft. For health studies select the actual design's reporting guideline and extensions; do not impose clinical trial requirements on unrelated CV research. Verify declarations against actual records, including truthful tool-use disclosure where required. For requested scoring, record evidence for mapped criteria: reproducibility-artifacts, ethics-disclosures, venue-compliance. Use category-review-map.json for primary ownership and the selected contribution profile. Keep the harness findings/checks schema; the editor collates the separate complete v2 assessment. Do not infer a score from role count."
+    }
+  ]
+}

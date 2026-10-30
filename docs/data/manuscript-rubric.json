@@ -1,0 +1,835 @@
+{
+  "version": 2,
+  "rubric_id": "paper-writing-v2",
+  "max_rating": 4,
+  "default_profile": "empirical-ml",
+  "core_threshold": 2,
+  "domains": [
+    {
+      "id": "argument",
+      "title": "Question, motivation and contribution"
+    },
+    {
+      "id": "evidence",
+      "title": "Methods, inference and claim support"
+    },
+    {
+      "id": "consistency",
+      "title": "Conceptual and factual consistency"
+    },
+    {
+      "id": "communication",
+      "title": "Structure and reader understanding"
+    },
+    {
+      "id": "transparency",
+      "title": "Reproducibility, scope and disclosures"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "research-question",
+      "title": "Explicit research question",
+      "domain": "argument",
+      "description": "Whether the question, target object or population, and conditions identify what would answer the study.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "No recoverable question, or incompatible tasks make the intended answer indeterminate.",
+        "1": "A topic is named, but the target, comparison or success condition needed to identify an answer is missing.",
+        "2": "The central question is identifiable; a consequential population, regime or outcome boundary remains ambiguous.",
+        "3": "Question, target and answer conditions are explicit; a secondary boundary needs clarification.",
+        "4": "A precise question and its conditions distinguish the intended answer from adjacent questions throughout the inspected account."
+      },
+      "checks": [
+        "Restate the question from manuscript passages; identify its target and answer condition.",
+        "Compare the stated task with actual outputs, endpoints or theorem targets.",
+        "Identify what observation or argument could answer this question rather than a nearby one."
+      ],
+      "role_ids": [
+        "argument",
+        "abstract-introduction"
+      ]
+    },
+    {
+      "id": "motivation-gap",
+      "title": "Motivation and evidenced gap",
+      "domain": "argument",
+      "description": "Whether a specific unresolved need follows from prior knowledge and has an explained consequence for the intended reader.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "No reason for the study is supplied, or the stated gap contradicts the inspected account.",
+        "1": "Broad importance or an unsupported absence claim substitutes for a specific unresolved need.",
+        "2": "A plausible gap is identified, but its evidence or intellectual or practical consequence is weakly explained.",
+        "3": "Specific prior limitations support the need and its consequence; a bounded premise remains underexplained.",
+        "4": "Inspected prior knowledge, the unresolved need and its consequence form a traceable rationale without manufacturing a universal gap."
+      },
+      "checks": [
+        "Locate the gap statement and the source or observation supporting each premise.",
+        "Explain what remains unresolved after the closest prior work and why it matters.",
+        "Replace unsupported first, none or all claims with evidenced scope."
+      ],
+      "role_ids": [
+        "argument",
+        "references"
+      ]
+    },
+    {
+      "id": "contribution-calibration",
+      "title": "Contribution and value calibration",
+      "domain": "argument",
+      "description": "Whether the declared contribution type, distinction from prior work, and value match what the work adds.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "No addition is identifiable, or the declared contribution contradicts the work described.",
+        "1": "Novelty or superiority slogans obscure what changed and what value the change provides.",
+        "2": "A concrete addition is named, but its novelty, usefulness or contribution type is overstated or conflated.",
+        "3": "Contribution type, concrete addition and value are bounded and credible; a secondary distinction needs sharpening.",
+        "4": "Each addition has a specific distinction and justified value appropriate to its type, including replication, resource, negative or theoretical contributions."
+      },
+      "checks": [
+        "State the contribution type and what the reader gains beyond the closest alternative.",
+        "Separate newness, usefulness and measured superiority.",
+        "Compare contribution bullets with delivered objects, analyses or propositions."
+      ],
+      "role_ids": [
+        "argument",
+        "evidence",
+        "limitations"
+      ]
+    },
+    {
+      "id": "literature-positioning",
+      "title": "Literature positioning and attribution",
+      "domain": "argument",
+      "description": "Whether relevant alternatives and source passages are represented accurately enough to locate the contribution and credit prior work.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Central cited support is nonexistent or demonstrably misrepresented, or no prior-work context is given.",
+        "1": "Citation lists or selective caricatures omit directly relevant alternatives and make central attribution unreliable.",
+        "2": "Relevant work is discussed, but an important distinction, contrary result or cited clause remains unsupported.",
+        "3": "Closest alternatives and contrary evidence are accurately distinguished using inspected passages; bounded source gaps are disclosed.",
+        "4": "Traceable attribution explains relevant alternatives, preserves contradictory evidence and supports central literature-dependent distinctions in the inspected scope."
+      },
+      "checks": [
+        "Inspect source passages for central cited clauses; record versions and locations.",
+        "Compare settings, assumptions and contributions with the closest alternatives rather than counting citations.",
+        "Mark inaccessible sources unverified; a citation identifier does not verify support."
+      ],
+      "role_ids": [
+        "references",
+        "argument"
+      ]
+    },
+    {
+      "id": "method-specification",
+      "title": "Method and procedure specification",
+      "domain": "evidence",
+      "description": "Whether procedures, constructions and choices are reported well enough to understand what was done.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "The central procedure or construction is absent or impossible to identify.",
+        "1": "A method label or sketch omits decisive steps, inputs or selection choices.",
+        "2": "The main procedure is recoverable, but a consequential implementation, derivation or analysis choice is underspecified.",
+        "3": "Inputs, steps, choices and outputs are specified; remaining omissions affect secondary details.",
+        "4": "The procedure can be reconstructed from explicit inputs, transformations, selection rules and outputs, with departures from cited methods identified."
+      },
+      "checks": [
+        "Trace an input through decisive processing or reasoning steps to the output.",
+        "Record relevant data or object versions, selection rules and parameters.",
+        "Distinguish a specified procedure from an assertion that a standard method was used."
+      ],
+      "role_ids": [
+        "methods"
+      ]
+    },
+    {
+      "id": "design-validity",
+      "title": "Design and inferential validity",
+      "domain": "evidence",
+      "description": "Whether the inspected design or formal argument can support the intended inference under stated assumptions.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "An inspected fatal design error, invalid proof step or incompatible assumption defeats the central inference.",
+        "1": "Major threats such as leakage, inappropriate units, missing identification assumptions or a proof gap remain unresolved.",
+        "2": "The design or argument addresses the question, but a consequential validity threat is only partly handled.",
+        "3": "Design choices and assumptions support the intended inference; a bounded threat remains with its consequence stated.",
+        "4": "Relevant sampling, identification or proof obligations are inspected and addressed for the stated inference, with explicit conditions and no unresolved material threat in that scope."
+      },
+      "checks": [
+        "Identify the estimand or formal target and the assumptions connecting evidence to it.",
+        "Inspect development/evaluation separation, independence or proof dependencies as applicable.",
+        "Distinguish an observed invalid step from an uninspected step; use unassessed when validity cannot yet be judged."
+      ],
+      "role_ids": [
+        "methods",
+        "evidence",
+        "limitations"
+      ]
+    },
+    {
+      "id": "comparison-fairness",
+      "title": "Comparisons and alternative explanations",
+      "domain": "evidence",
+      "description": "Whether comparisons are interpretable under matched or explicitly different conditions and address the attributed cause of an effect.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A central superiority or attribution claim relies on a known incompatible comparison presented as equivalent.",
+        "1": "Relevant alternatives or decisive condition differences are omitted, leaving the central comparison confounded.",
+        "2": "Useful comparisons exist, but a material resource, assumption or selection mismatch limits interpretation.",
+        "3": "Relevant alternatives and comparison conditions are reported; remaining differences constrain only a bounded claim.",
+        "4": "Comparisons answer their stated question with matched conditions or explicit differences; necessary controls distinguish central attribution from plausible alternatives."
+      },
+      "checks": [
+        "List comparator eligibility, assumptions, inputs, resources and selection access on both sides.",
+        "Separate reproduced results from values copied from publications.",
+        "For component claims, check what else changed; otherwise limit the claim to the observed system contrast."
+      ],
+      "role_ids": [
+        "evidence",
+        "methods"
+      ]
+    },
+    {
+      "id": "analysis-uncertainty",
+      "title": "Analysis and uncertainty interpretation",
+      "domain": "evidence",
+      "description": "Whether analyses, variability or formal bounds are defined and interpreted with the assumptions and precision the claim requires.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "The central analysis is absent or demonstrably misinterpreted, such as treating nonsignificance as established equivalence.",
+        "1": "Central estimates or bounds lack essential calculation, dependence, interval or probability meaning.",
+        "2": "The main estimate or bound is interpretable, but an important uncertainty source, analysis choice or condition remains unclear.",
+        "3": "Analysis choices, precision and represented uncertainty are explained; a bounded unrepresented source is acknowledged.",
+        "4": "Estimates or guarantees have traceable calculations, appropriate units or quantifiers, and calibrated interpretation of relevant uncertainty, assumptions and analysis selection."
+      },
+      "checks": [
+        "Identify analysis target, independent unit and represented randomness, or theorem quantifiers and regime.",
+        "Distinguish SD, SE, confidence, credible and prediction intervals; inspect evaluation of the contrast itself.",
+        "Check effect magnitude and analysis selection rather than imposing a p-value threshold or fixed seed quota."
+      ],
+      "role_ids": [
+        "evidence",
+        "methods"
+      ]
+    },
+    {
+      "id": "robustness-failures",
+      "title": "Robustness, sensitivity and failures",
+      "domain": "evidence",
+      "description": "Whether evidence probes consequential sensitivities and failure conditions relevant to the contribution.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Known central failures are suppressed or contradicted, or an unrestricted robustness claim has no supporting examination.",
+        "1": "Consequential sensitivities or counterexamples are ignored despite reliance on broad stability claims.",
+        "2": "Some sensitivity or failure evidence is supplied, but a central fragile condition remains unexplored or unexplained.",
+        "3": "Principal sensitivities and observed failures are examined; remaining probes are bounded by the stated scope.",
+        "4": "Claim-relevant stress tests, sensitivity arguments or counterexamples locate where conclusions persist or fail, preserving adverse findings and unresolved conditions."
+      },
+      "checks": [
+        "Choose sensitivity checks that could change a central conclusion and explain their relevance.",
+        "Separate observed failure, inconclusive result, unmeasured condition and unavailable evidence.",
+        "Inspect whether exceptions change the conclusion or require a narrower regime."
+      ],
+      "role_ids": [
+        "limitations",
+        "evidence"
+      ]
+    },
+    {
+      "id": "claim-evidence-entailment",
+      "title": "Claim-to-evidence entailment",
+      "domain": "evidence",
+      "description": "Whether each central statement follows from its inspected evidence at the stated strength and scope.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A central claim contradicts its cited result or asserts an inference the inspected evidence cannot support.",
+        "1": "Central claims lack support or exceed the evidence's population, comparator, causal status or formal conditions.",
+        "2": "Most central claims map to evidence, but a consequential scope or inference mismatch remains.",
+        "3": "Central claims follow from identified results or arguments; a secondary qualification or evidence link needs repair.",
+        "4": "Every inspected central claim links to supporting results or arguments and preserves their comparator, conditions, uncertainty and inferential strength."
+      },
+      "checks": [
+        "Map exact headline and conclusion clauses to table cells, analyses, proof steps or source passages.",
+        "Check observation versus mechanism, association versus causation, and prediction versus demonstrated utility.",
+        "Propose specific missing evidence or a claim revision that existing evidence supports."
+      ],
+      "role_ids": [
+        "evidence",
+        "argument",
+        "references"
+      ]
+    },
+    {
+      "id": "concept-definitions",
+      "title": "Concept definitions and identity",
+      "domain": "consistency",
+      "description": "Whether central constructs have operational meanings and retain their identity across terms and sections.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A central concept has incompatible meanings or no recoverable definition.",
+        "1": "Undefined or overloaded constructs obscure what is manipulated, measured or proved.",
+        "2": "Central constructs are mostly defined, but a consequential alias or boundary remains ambiguous.",
+        "3": "Definitions and permitted aliases preserve central identities; a secondary term needs disambiguation.",
+        "4": "Operational definitions distinguish central constructs, and tracing sections shows stable meanings and explicit relationships among aliases."
+      },
+      "checks": [
+        "Build a concept ledger with definition, canonical label, permitted aliases and first definition.",
+        "Inspect efficiency, generalization, clinical utility and other overloaded words against the quantity studied.",
+        "Cite conflicting passages; do not treat harmless grammatical variation as changed meaning."
+      ],
+      "role_ids": [
+        "terminology",
+        "methods"
+      ]
+    },
+    {
+      "id": "notation-units",
+      "title": "Notation, units and formal references",
+      "domain": "consistency",
+      "description": "Whether symbols, dimensions, units and formal labels are defined and used consistently.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A central equation or quantity has contradictory symbols or dimensions that prevent interpretation.",
+        "1": "Repeated undefined or changing symbols, scales or units obscure central calculations.",
+        "2": "Main notation and units are recoverable, but a consequential collision, conversion or reference remains unresolved.",
+        "3": "Central symbols, domains, scales and units are consistent; bounded secondary definitions need repair.",
+        "4": "Symbols and domains are defined before dependency, units and conversions are coherent, and equation, theorem and panel references resolve in the inspected material."
+      },
+      "checks": [
+        "Trace central symbols to definitions, domains, shapes or dimensions as relevant.",
+        "Check conversions, scale factors and metric direction across equations, text and displays.",
+        "Resolve symbol collisions and broken formal references without changing mathematical meaning."
+      ],
+      "role_ids": [
+        "terminology",
+        "evidence",
+        "methods"
+      ]
+    },
+    {
+      "id": "numbers-denominators",
+      "title": "Numbers, denominators and aggregation",
+      "domain": "consistency",
+      "description": "Whether quantities agree, identify what is counted, and use correct denominators, aggregation and change descriptions.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A central numeric statement contradicts the supplied result or uses a denominator that reverses its meaning.",
+        "1": "Central counts, percentages or summaries cannot reconcile because denominators or aggregation are missing or inconsistent.",
+        "2": "Principal quantities are traceable, but a consequential count, rounding, aggregation or relative-change ambiguity remains.",
+        "3": "Central numbers and denominators reconcile across inspected locations; a bounded secondary discrepancy remains.",
+        "4": "Counts, exclusions, counting units, aggregation and numeric changes reconcile to identified results, distinguishing relative change from percentage points where relevant."
+      },
+      "checks": [
+        "Identify the counting unit, denominator, exclusions and aggregation for central n values, percentages and summaries.",
+        "Recompute differences and relative changes from supplied values, preserving rounding and metric direction.",
+        "In numeric-free theory inspect constants, dimensions, complexity orders and quantified counts; do not invent empirical counts."
+      ],
+      "role_ids": [
+        "evidence",
+        "methods",
+        "figures"
+      ]
+    },
+    {
+      "id": "cross-section-alignment",
+      "title": "Alignment across manuscript components",
+      "domain": "consistency",
+      "description": "Whether repeated facts and claims agree across title, abstract, body, displays and supplement.",
+      "core": true,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Components make incompatible central claims or report different central facts without explanation.",
+        "1": "Material differences in endpoint, population, comparator, result or conditions persist between summary and body.",
+        "2": "The main account agrees, but an important qualification or version change is not propagated to dependent locations.",
+        "3": "Central facts, conditions and conclusions align; a bounded secondary inconsistency remains.",
+        "4": "Tracing summaries, methods, results, captions, discussion and supplied supplement reconciles repeated central facts, labels and qualifications."
+      },
+      "checks": [
+        "Compare a claim ledger with title, abstract, introduction, results, captions and conclusion.",
+        "Trace revised definitions, dataset versions, endpoints and qualifiers to dependent passages.",
+        "Distinguish appropriate summary omissions from contradictions or lost decisive conditions."
+      ],
+      "role_ids": [
+        "abstract-introduction",
+        "terminology",
+        "figures",
+        "argument"
+      ]
+    },
+    {
+      "id": "title-abstract",
+      "title": "Title and abstract communication",
+      "domain": "communication",
+      "description": "Whether summaries orient readers to the question, approach, principal result and essential boundary in the available format.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "The title or abstract is missing or does not identify the subject and principal message.",
+        "1": "Vague slogans or method names replace the question, approach or interpretable principal finding.",
+        "2": "The study is identifiable, but a main result, comparison or essential boundary is difficult to recover.",
+        "3": "Question, approach and bounded principal finding are clear; a secondary qualifier or structural detail needs improvement.",
+        "4": "Within the applicable format, title and abstract efficiently convey the study and an interpretable principal finding with the conditions needed to read it correctly."
+      },
+      "checks": [
+        "Recover what was asked, done and found from title and abstract alone.",
+        "Retain the comparator, scale and decisive qualifier needed to interpret the headline result.",
+        "Check structured headings for the actual journal and design rather than imposing one template."
+      ],
+      "role_ids": [
+        "abstract-introduction",
+        "argument"
+      ]
+    },
+    {
+      "id": "introduction-logic",
+      "title": "Introduction argument sequence",
+      "domain": "communication",
+      "description": "Whether the introduction leads from reader context through the unresolved problem to this question and contribution.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "No argument connecting context, problem and study is recoverable from the introduction.",
+        "1": "Disconnected background or citation lists force the reader to invent the connection to this study.",
+        "2": "The main progression is visible, but a consequential logical bridge or study rationale is buried or missing.",
+        "3": "Context, unresolved problem, question and contribution form a clear progression with a bounded transition gap.",
+        "4": "Each stage supplies context needed for the next, making why this question and approach follow readily recoverable without unnecessary background."
+      },
+      "checks": [
+        "State each argumentative step and locate its bridge to the next.",
+        "Check that background serves the question and contributions follow the stated problem.",
+        "Respect genre conventions instead of forcing results or one fixed outline into every introduction."
+      ],
+      "role_ids": [
+        "abstract-introduction",
+        "argument",
+        "references"
+      ]
+    },
+    {
+      "id": "paragraph-sentence-logic",
+      "title": "Paragraph and sentence logic",
+      "domain": "communication",
+      "description": "Whether local prose makes actors, dependencies, referents and reasoning accessible without changing scientific meaning.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Central passages are uninterpretable because sentence relations or referents cannot be recovered.",
+        "1": "Repeated missing links, ambiguous referents or noun stacks obscure the central reasoning.",
+        "2": "The argument is recoverable with effort, but consequential local ambiguities or misplaced qualifications remain.",
+        "3": "Paragraph purposes and sentence dependencies are clear; local friction affects secondary passages.",
+        "4": "Inspected prose connects context, reasoning and takeaway with explicit referents and preserved conditions, so readers need not supply missing links."
+      },
+      "checks": [
+        "State each consequential paragraph's job and locate its evidence-to-takeaway link.",
+        "Resolve ambiguous referents and buried actors; check whether therefore and because express supported links.",
+        "Preserve negation, causal status, numbers and qualifiers when editing; use no sentence-length or voice quota."
+      ],
+      "role_ids": [
+        "readability",
+        "abstract-introduction"
+      ]
+    },
+    {
+      "id": "jargon-acronyms",
+      "title": "Jargon, acronyms and audience access",
+      "domain": "communication",
+      "description": "Whether necessary technical language is introduced where and at the level the declared audience needs.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Unexplained central terminology or abbreviations prevent the intended reader from identifying the method or finding.",
+        "1": "Repeated undefined jargon or competing abbreviations require substantial outside inference.",
+        "2": "Most terms are usable, but a consequential first-use definition, expansion or audience explanation is missing.",
+        "3": "Necessary terms and acronyms are introduced in their reading scopes; a bounded secondary access problem remains.",
+        "4": "Technical distinctions are preserved with concise first-use explanations, useful abbreviations and independently readable components suited to the audience."
+      },
+      "checks": [
+        "Check unfamiliar terms at first use in abstract and body independently and in separately read displays as required.",
+        "Explain necessary distinctions with definitions or examples rather than deleting them.",
+        "Remove ornamental jargon or low-value new acronyms; document venue-specific exceptions."
+      ],
+      "role_ids": [
+        "terminology",
+        "readability"
+      ]
+    },
+    {
+      "id": "reader-teachback",
+      "title": "Blind reader teach-back",
+      "domain": "communication",
+      "description": "Whether an intended reader, before seeing the author's explanation, recovers the question, approach, evidence and scope from the reading packet.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A saved blind reading recovers a materially contrary central question, finding or scope because of the supplied wording.",
+        "1": "The blind reader cannot recover several central elements or supplies unsupported links from outside the packet.",
+        "2": "The reader recovers the principal message but misses a consequential mechanism, evidence link or boundary.",
+        "3": "The reader recovers question, approach, evidence and scope with passage support; a bounded secondary mismatch remains.",
+        "4": "A saved blind teach-back reconstructs all packet-appropriate central elements and decisive qualifiers, with no consequential mismatch after comparison with the intended account."
+      },
+      "checks": [
+        "Save the first reader response before revealing the intended thesis or other reviews.",
+        "Require passage or display locations for recovered elements and explicit not-recoverable statements for gaps.",
+        "If no blind response exists, mark unassessed rather than inferring comprehension from polished prose."
+      ],
+      "role_ids": [
+        "readability"
+      ]
+    },
+    {
+      "id": "figures-tables",
+      "title": "Figures, tables and captions",
+      "domain": "communication",
+      "description": "Whether accessible displays convey comparisons or reasoning with interpretable labels, scales, units and captions. N/A requires absent displays and no claim needing one; document both.",
+      "core": false,
+      "allow_not_applicable": true,
+      "anchors": {
+        "0": "An inspected display materially misrepresents a central result or cannot be interpreted from its labels and caption.",
+        "1": "Central displays omit necessary labels, scales, units or uncertainty meaning, or obscure the intended comparison.",
+        "2": "Displays convey the main message, but an important panel, scale, sampling-unit or caption ambiguity remains.",
+        "3": "Accessible displays and captions make central comparisons interpretable; a bounded layout or labeling issue remains.",
+        "4": "Visually inspected displays answer clear questions with legible encodings, explicit units and relevant uncertainty, and self-contained captions identifying conditions and samples."
+      },
+      "checks": [
+        "Inspect actual images and tables for legibility, axes, panels and encodings; declare caption-only limits.",
+        "Verify caption definitions of n, uncertainty, acronyms and conditions against the display.",
+        "For N/A document absent displays and why no claim needs one; inaccessible existing displays are unassessed."
+      ],
+      "role_ids": [
+        "figures",
+        "evidence"
+      ]
+    },
+    {
+      "id": "reproducibility-artifacts",
+      "title": "Reproducibility route and artifacts",
+      "domain": "transparency",
+      "description": "Whether readers can locate materials, derivations and provenance needed to trace or reconstruct central results under stated access conditions.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "No route to a central result's derivation or materials is supplied, or stated artifacts are demonstrably unrelated.",
+        "1": "Generic availability claims omit essential locators, versions, configurations or access procedures.",
+        "2": "A usable route exists for some central results, but an important version, dependency or access restriction is unresolved.",
+        "3": "Central results link to identified materials and reconstruction instructions; a bounded dependency or access detail remains.",
+        "4": "A traceable route connects central results to versioned derivations or materials, configurations and access instructions, stating restrictions and the extent of actual execution or checking."
+      },
+      "checks": [
+        "Trace central results to proof locations or data, split, configuration and result files as appropriate.",
+        "Inspect artifact identity, version and access conditions; a repository URL does not establish reproduction.",
+        "Record what was rerun or checked; allow a justified alternative to public release."
+      ],
+      "role_ids": [
+        "methods",
+        "venue"
+      ]
+    },
+    {
+      "id": "limitations-transfer",
+      "title": "Limitations and transfer conditions",
+      "domain": "transparency",
+      "description": "Whether material limits are disclosed with their consequences for interpretation and transfer beyond studied conditions.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "Known material limits are denied, or conclusions explicitly extend to settings excluded by the stated evidence.",
+        "1": "Generic caveats avoid the design or assumption limits determining what cannot be concluded.",
+        "2": "Relevant limits are named, but their effects on interpretation or transfer are incompletely explained.",
+        "3": "Material limits connect to affected conclusions and plausible transfer conditions; a bounded consequence remains unclear.",
+        "4": "The account explains how design, assumptions, adverse evidence and untested settings bound conclusions, preserving these conditions when discussing transfer."
+      },
+      "checks": [
+        "Connect each material limit to the claim or setting it restricts.",
+        "Separate untested transfer from observed failure and aspirations from demonstrated performance.",
+        "Check whether discussion and conclusion preserve the limits rather than ending with an unrestricted claim."
+      ],
+      "role_ids": [
+        "limitations",
+        "evidence"
+      ]
+    },
+    {
+      "id": "ethics-disclosures",
+      "title": "Ethics and truthful disclosures",
+      "domain": "transparency",
+      "description": "Whether context-relevant ethics, consent, interests, funding, contributions and assistance statements are truthful and supported by supplied records.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "A material declaration is demonstrably false or contradicts the supplied ethics, consent or contribution record.",
+        "1": "Material applicable declarations or provenance are missing, or unsupported exemptions substitute for records.",
+        "2": "Relevant declarations are present, but a consequential record, scope or assistance detail remains unresolved.",
+        "3": "Applicable declarations agree with inspected records; a bounded secondary disclosure needs clarification.",
+        "4": "Context-relevant ethical considerations and declarations are truthfully stated with record support, including explicit justified absence where an activity or requirement does not apply."
+      },
+      "checks": [
+        "Identify actual participants, data rights, sensitive uses and relevant harms before selecting checks.",
+        "Compare ethics, consent or exemption wording, funding, interests and contributions with supplied records.",
+        "Describe actual assistance under applicable policy; absent records mean unresolved, not no conflict or exempt."
+      ],
+      "role_ids": [
+        "venue",
+        "methods",
+        "limitations"
+      ]
+    },
+    {
+      "id": "venue-compliance",
+      "title": "Venue, stage and reporting requirements",
+      "domain": "transparency",
+      "description": "Whether the inspected artifact meets official requirements for the declared venue, year, track, stage and study design.",
+      "core": false,
+      "allow_not_applicable": false,
+      "anchors": {
+        "0": "An inspected mandatory eligibility, format or submission condition is violated in a way that prevents the intended submission.",
+        "1": "Several mandatory applicable items are missing, or the wrong cycle, venue, stage or study guideline is used.",
+        "2": "Applicable requirements are identified, but a consequential format, reporting or declaration item remains unresolved.",
+        "3": "Mandatory requirements are checked against current official sources; a bounded nonfatal item remains to repair.",
+        "4": "A dated requirement record links applicable mandatory checks to official sources and artifact locations, separating required items, recommendations and justified exclusions."
+      },
+      "checks": [
+        "Record exact venue, cycle, track, stage, official URL and access date before judging compliance.",
+        "Inspect the rendered artifact for applicable template, length, anonymity and supplement rules.",
+        "Select reporting guidance by actual design; distinguish formal compliance from scientific correctness."
+      ],
+      "role_ids": [
+        "venue"
+      ]
+    }
+  ],
+  "profiles": {
+    "empirical-ml": {
+      "title": "Empirical machine learning and computer vision",
+      "weights": {
+        "research-question": 5,
+        "motivation-gap": 5,
+        "contribution-calibration": 5,
+        "literature-positioning": 5,
+        "method-specification": 7,
+        "design-validity": 7,
+        "comparison-fairness": 6,
+        "analysis-uncertainty": 6,
+        "robustness-failures": 4,
+        "claim-evidence-entailment": 5,
+        "concept-definitions": 5,
+        "notation-units": 5,
+        "numbers-denominators": 5,
+        "cross-section-alignment": 5,
+        "title-abstract": 3,
+        "introduction-logic": 3,
+        "paragraph-sentence-logic": 2,
+        "jargon-acronyms": 2,
+        "reader-teachback": 3,
+        "figures-tables": 2,
+        "reproducibility-artifacts": 3,
+        "limitations-transfer": 3,
+        "ethics-disclosures": 2,
+        "venue-compliance": 2
+      },
+      "guidance": {
+        "research-question": "Name task, input access, output and evaluation setting; define the question beyond a leaderboard score.",
+        "motivation-gap": "Explain the measured or conceptual need left by relevant methods; benchmark convenience alone does not establish importance.",
+        "contribution-calibration": "Recognize methods, resources, analyses, replications, feasibility and negative results; SOTA is not universally required.",
+        "literature-positioning": "Compare closely related settings, data and input assumptions; include relevant contrary and negative findings.",
+        "method-specification": "Inspect split versions, preprocessing, training, tuning, architecture, inference and relevant compute choices.",
+        "design-validity": "Inspect leakage, selection access, independent evaluation units and the design needed for causal or mechanism claims.",
+        "comparison-fairness": "Track data, annotation access, tuning, capacity, compute, inference calls and postprocessing; label copied versus reproduced baselines.",
+        "analysis-uncertainty": "State what varies across runs or samples and how uncertainty is computed; require neither a universal seed count nor a significance test.",
+        "robustness-failures": "Probe claim-relevant ablations, shifts, workloads or adverse cases rather than demanding unrelated experiments.",
+        "claim-evidence-entailment": "Keep benchmark performance, component mechanism, broad generalization and deployment benefit distinct.",
+        "concept-definitions": "Operationalize robustness, efficiency and generalization; keep validation and test roles distinct.",
+        "notation-units": "Reconcile tensor shapes, loss terms, metric direction, latency units and hardware-dependent quantities.",
+        "numbers-denominators": "Identify image, scene, participant, dataset and run counts; distinguish relative changes from percentage points.",
+        "cross-section-alignment": "Propagate split, model version, input access and principal result across summaries, displays and supplement.",
+        "title-abstract": "Convey task, approach and principal measured finding without broadening its tested conditions.",
+        "introduction-logic": "Connect the specific problem and prior limitation to the contribution using genre-appropriate previews.",
+        "paragraph-sentence-logic": "Explain module, operation and comparison dependencies; preserve result qualifiers.",
+        "jargon-acronyms": "Define necessary method terms for the intended ML or adjacent-field reader without deleting precise distinctions.",
+        "reader-teachback": "Ask a blind reader to recover task, changed mechanism, supporting comparison and tested scope from the saved packet.",
+        "figures-tables": "Inspect visual examples and quantitative encodings, including scales, input conditions, sampling units and uncertainty.",
+        "reproducibility-artifacts": "Trace results to versions, configurations and commands or a restricted-access route; distinguish availability from execution.",
+        "limitations-transfer": "Bound conclusions by evaluated distributions, resources and uses; untested deployment remains unresolved.",
+        "ethics-disclosures": "Review actual data rights, annotation practices, sensitive uses and assistance; medical images alone do not imply a trial.",
+        "venue-compliance": "Verify the actual cycle, track and stage rather than inheriting historical formatting or policies."
+      }
+    },
+    "theory": {
+      "title": "Theory, formal analysis and proofs",
+      "weights": {
+        "research-question": 5,
+        "motivation-gap": 5,
+        "contribution-calibration": 6,
+        "literature-positioning": 6,
+        "method-specification": 7,
+        "design-validity": 10,
+        "comparison-fairness": 4,
+        "analysis-uncertainty": 6,
+        "robustness-failures": 3,
+        "claim-evidence-entailment": 7,
+        "concept-definitions": 7,
+        "notation-units": 7,
+        "numbers-denominators": 3,
+        "cross-section-alignment": 6,
+        "title-abstract": 2,
+        "introduction-logic": 2,
+        "paragraph-sentence-logic": 2,
+        "jargon-acronyms": 1,
+        "reader-teachback": 2,
+        "figures-tables": 1,
+        "reproducibility-artifacts": 3,
+        "limitations-transfer": 2,
+        "ethics-disclosures": 1,
+        "venue-compliance": 2
+      },
+      "guidance": {
+        "research-question": "Define formal target, objects, regime and what proposition, separation or bound would answer the question.",
+        "motivation-gap": "Explain what remains unresolved under the relevant assumptions; changing assumptions or regimes can change the gap.",
+        "contribution-calibration": "Distinguish theorem, proof technique, characterization, impossibility result or sharper bound; empirical results are not required merely to score well.",
+        "literature-positioning": "Compare theorem statements, assumptions, quantifiers, rates and regimes rather than only paper-level descriptions.",
+        "method-specification": "Specify constructions, algorithms, definitions, proof strategy and dependencies needed to reconstruct the argument.",
+        "design-validity": "Inspect proof obligations, logical steps, boundary cases and lemma assumptions; locating a theorem environment is not proof review.",
+        "comparison-fairness": "Compare guarantees under compatible assumptions and regimes; explain tradeoffs when they differ instead of demanding benchmarks.",
+        "analysis-uncertainty": "For probabilistic results inspect probability spaces, events and quantifiers; for deterministic results inspect bound dependence, regime and approximation meaning.",
+        "robustness-failures": "Use counterexamples, tightness, degenerate cases or assumption sensitivity to locate boundaries; experiments are optional unless claimed.",
+        "claim-evidence-entailment": "Retain decisive theorem assumptions and quantifiers in summaries; asymptotic complexity is not measured wall-clock speed.",
+        "concept-definitions": "Check formal object identity, equivalence conventions and distinctions among related properties throughout proof and exposition.",
+        "notation-units": "Prioritize domains, index ranges, dimensions, overloaded symbols and precise theorem or lemma references.",
+        "numbers-denominators": "Inspect constants, factors, dimensions, rates and quantified counts. For a numeric-free proof, document inspected absence of numeric assertions instead of inventing counts.",
+        "cross-section-alignment": "Reconcile informal guarantees with exact theorem statements, proof conditions and appendix versions.",
+        "title-abstract": "Give an interpretable result and its decisive regime or assumptions; the abstract need not contain a full proof.",
+        "introduction-logic": "Connect the open formal question to the result and useful intuition without assuming the reader knows the proof.",
+        "paragraph-sentence-logic": "Explain dependencies among proof steps; intuition and formal argument should concern the same statement.",
+        "jargon-acronyms": "Introduce specialized properties and constructions for the intended audience while preserving mathematical distinctions.",
+        "reader-teachback": "Ask a blind reader to restate target, guarantee, assumptions and proof idea at the level supported by the packet.",
+        "figures-tables": "Assess supplied diagrams or bound tables; N/A requires both no displays and no claim needing one, not merely a theory contribution.",
+        "reproducibility-artifacts": "Complete proofs, derivation locations and dependency or formalization versions can provide reconstruction; code is not required for a noncomputational proof.",
+        "limitations-transfer": "Explain excluded regimes, assumption strength and departures of practical implementations from the proved construction.",
+        "ethics-disclosures": "Assess actual funding, interests, authorship, assistance and relevant applications; do not invent participant requirements.",
+        "venue-compliance": "Check proof and supplement placement, length and declaration rules for the actual venue and stage."
+      }
+    },
+    "clinical": {
+      "title": "Clinical, diagnostic and health research",
+      "weights": {
+        "research-question": 4,
+        "motivation-gap": 4,
+        "contribution-calibration": 4,
+        "literature-positioning": 4,
+        "method-specification": 7,
+        "design-validity": 9,
+        "comparison-fairness": 5,
+        "analysis-uncertainty": 8,
+        "robustness-failures": 4,
+        "claim-evidence-entailment": 6,
+        "concept-definitions": 4,
+        "notation-units": 4,
+        "numbers-denominators": 6,
+        "cross-section-alignment": 5,
+        "title-abstract": 3,
+        "introduction-logic": 2,
+        "paragraph-sentence-logic": 2,
+        "jargon-acronyms": 2,
+        "reader-teachback": 3,
+        "figures-tables": 3,
+        "reproducibility-artifacts": 3,
+        "limitations-transfer": 3,
+        "ethics-disclosures": 3,
+        "venue-compliance": 2
+      },
+      "guidance": {
+        "research-question": "Identify actual trial, observational, diagnostic or prediction question, population, setting and endpoint; not every health study tests treatment benefit.",
+        "motivation-gap": "Explain the clinical or methodological need in care context using relevant evidence, uncertainty and alternatives.",
+        "contribution-calibration": "Distinguish clinical benefit, diagnostic accuracy, prediction performance and technical feasibility; statistical novelty is not demonstrated patient benefit.",
+        "literature-positioning": "Compare relevant populations, care pathways, endpoints and designs without merging incompatible clinical questions.",
+        "method-specification": "Report actual eligibility, recruitment, intervention or index test, reference standard, outcomes, follow-up and missing-data handling as applicable.",
+        "design-validity": "Inspect design-specific selection, confounding, allocation, masking, reference-standard or participant-overlap risks; causal inference needs justified identification assumptions.",
+        "comparison-fairness": "Use the relevant clinical comparator; assess thresholds, reader access, treatment allocation or adjustment as appropriate to the design.",
+        "analysis-uncertainty": "Identify estimands, analysis populations, clustering, missingness, multiplicity and precision where relevant; distinguish statistical from clinical importance.",
+        "robustness-failures": "Inspect relevant sensitivity analyses, subgroup precision, harms and site or temporal variation; avoid unsupported subgroup conclusions.",
+        "claim-evidence-entailment": "Do not infer utility from discrimination alone, benefit from an unsupported surrogate, or equivalence from nonsignificance.",
+        "concept-definitions": "Keep disease definitions, endpoints, index tests, horizons, calibration, discrimination and clinical utility distinct.",
+        "notation-units": "Check laboratory or dosage units, time horizons, risk scales and effect-measure definitions for the actual study.",
+        "numbers-denominators": "Reconcile participant flow, exclusions, missing observations, events and follow-up; distinguish patients from lesions, visits or images.",
+        "cross-section-alignment": "Compare endpoint, analysis population, effect and design qualifiers across abstract, body, displays and supplied protocol.",
+        "title-abstract": "Use journal and design-appropriate structure; report interpretable estimates with essential population and uncertainty information.",
+        "introduction-logic": "Move from the care or scientific problem to the objective, respecting journal conventions about result previews.",
+        "paragraph-sentence-logic": "Keep actors, temporal order, effect measures and causal status explicit when simplifying prose.",
+        "jargon-acronyms": "Explain clinical and ML terminology for the declared audience without erasing diagnostic or prognostic distinctions.",
+        "reader-teachback": "Ask a blind reader to recover design, population, endpoint, result and what it establishes about care.",
+        "figures-tables": "Inspect applicable flow, baseline, outcome and diagnostic displays; clarify populations, events, intervals and scales.",
+        "reproducibility-artifacts": "Trace results to supplied protocol, analysis plan, data dictionary or controlled access; privacy restrictions alone do not imply failure.",
+        "limitations-transfer": "Explain design limits, patient and setting applicability, residual confounding or validation gaps as relevant; untested transfer is not observed failure.",
+        "ethics-disclosures": "Verify actual approval or exemption, consent, applicable registration, funding and interests against records; medical vocabulary alone does not trigger requirements.",
+        "venue-compliance": "Route actual design to relevant CONSORT, STROBE, STARD, TRIPOD or other guidance and extensions; separately verify current journal rules."
+      }
+    },
+    "systematic-review": {
+      "title": "Systematic reviews and evidence syntheses",
+      "weights": {
+        "research-question": 5,
+        "motivation-gap": 4,
+        "contribution-calibration": 4,
+        "literature-positioning": 5,
+        "method-specification": 9,
+        "design-validity": 8,
+        "comparison-fairness": 4,
+        "analysis-uncertainty": 7,
+        "robustness-failures": 5,
+        "claim-evidence-entailment": 6,
+        "concept-definitions": 5,
+        "notation-units": 3,
+        "numbers-denominators": 5,
+        "cross-section-alignment": 5,
+        "title-abstract": 3,
+        "introduction-logic": 2,
+        "paragraph-sentence-logic": 2,
+        "jargon-acronyms": 2,
+        "reader-teachback": 3,
+        "figures-tables": 3,
+        "reproducibility-artifacts": 4,
+        "limitations-transfer": 3,
+        "ethics-disclosures": 1,
+        "venue-compliance": 2
+      },
+      "guidance": {
+        "research-question": "Define the synthesis question and eligibility framework, including relevant populations or objects, exposures, interventions, outcomes and designs.",
+        "motivation-gap": "Explain what the synthesis resolves beyond existing reviews, including changed scope or evidence rather than age alone.",
+        "contribution-calibration": "Distinguish mapping, qualitative synthesis and quantitative meta-analysis; do not require inappropriate pooling.",
+        "literature-positioning": "Separate prior-review context from the included-study evidence set; inspect source claims and conflicting evidence.",
+        "method-specification": "Specify actual information sources, dates, complete searches, eligibility, screening, extraction, appraisal and synthesis procedures.",
+        "design-validity": "Inspect search and selection coverage, duplicate handling, risk-of-bias appraisal and synthesis compatibility; checklist completion alone is not validity.",
+        "comparison-fairness": "Check comparability of populations, designs, outcomes and follow-up; distinguish direct and indirect comparisons and avoid unsupported cross-study rankings.",
+        "analysis-uncertainty": "For meta-analysis inspect effect harmonization, dependence, model assumptions, heterogeneity and precision; for qualitative synthesis inspect how uncertainty and conflict shape reasoning.",
+        "robustness-failures": "Inspect relevant sensitivity to eligibility, appraisal, synthesis choices and missing evidence; do not mandate uninformative statistical bias tests.",
+        "claim-evidence-entailment": "Tie conclusions to included evidence and its certainty; pooling associations does not itself identify causation.",
+        "concept-definitions": "Distinguish records, reports, studies and participants; define harmonized outcomes and any certainty terminology used.",
+        "notation-units": "Check effect directions, conversions, follow-up scales and synthesis notation; do not merge unlike quantities under one label.",
+        "numbers-denominators": "Reconcile retrieval, deduplication, screening, exclusion and inclusion counts; distinguish reports, studies and per-outcome denominators.",
+        "cross-section-alignment": "Reconcile search dates, eligibility, included counts, outcome sets and conclusions across abstract, flow, tables and supplement.",
+        "title-abstract": "Identify synthesis type and scope, actual sources or dates, principal findings and decisive evidence limits within the required format.",
+        "introduction-logic": "Connect the decision or knowledge need to what prior reviews leave unresolved and this review's objective.",
+        "paragraph-sentence-logic": "Organize around the synthesis question; distinguish individual-study observations from review-level inference.",
+        "jargon-acronyms": "Explain synthesis and appraisal terms; use certainty labels only with a defined assessment method.",
+        "reader-teachback": "Ask a blind reader to recover eligibility scope, synthesis process, main finding and evidence limitations.",
+        "figures-tables": "Inspect flow and evidence-summary displays; verify study identity, effect direction, uncertainty and duplicate counting.",
+        "reproducibility-artifacts": "Trace searches, screening decisions, extraction, appraisal and synthesis code or reasoning; identify protocol deviations and access restrictions.",
+        "limitations-transfer": "Distinguish review-process limits from included-study limits and explain both sets of consequences for conclusions and applicability.",
+        "ethics-disclosures": "Verify funding, interests, reviewer contributions and assistance; participant requirements apply only when the actual work triggers them.",
+        "venue-compliance": "Check actual journal and appropriate PRISMA guidance or extensions; selecting this profile does not make narrative related work systematic."
+      }
+    }
+  }
+}

@@ -29,6 +29,14 @@
 
 > This is an independent research tool for simulated feedback. It is not affiliated with these conferences, and its scores are not acceptance predictions.
 
+## Paper Review Lab: writing toolkit and evidence workbench
+
+[Open Paper Review Lab](https://optimizer077.github.io/paper-review-harness/) · [Download the toolkit](https://optimizer077.github.io/paper-review-harness/downloads/paper-review-lab.zip) · [Read the skill](toolkit/paper-writing/SKILL.md)
+
+The companion writing toolkit adds 24 anchored manuscript criteria, five domains, four contribution profiles and a historical source library of 300 papers published through 2022. Its browser workbench records evidence, shows assessment coverage and applies an optional aggressive policy that caps the effective score when critical weaknesses remain. Raw scores and all cap reasons stay visible. Records stay in the browser until exported; it does not inspect or upload a manuscript.
+
+The [portable toolkit](toolkit/README.md) and [scoring policy](toolkit/paper-writing/references/aggressive-review.md) are separate additions to the established PDF review workflow below. The public library contains citation metadata and original editorial notes; article abstracts, downloaded bodies and private manuscripts are excluded. These editorial thresholds have not been calibrated as acceptance predictions or scientific certification.
+
 ## How it works
 
 <p align="center">

@@ -1,0 +1,66 @@
+# Clarity, terminology, and reader understanding
+
+Use this reference for CV, ML, and medical manuscripts after establishing the target reader, venue/year, study design, and supplied evidence. The workflow and examples below are **editorial design recommendations**, not validated measures of paper quality or universal acceptance rules. Current author instructions override general prose preferences. A clear account can expose a scientific gap; editing cannot fill that gap with invented facts.
+
+## Source-grounded principles
+
+- **Manage the reader's expectations.** Gopen and Swan recommend keeping the grammatical subject near its verb, introducing context before unfamiliar information, connecting sentence openings to relevant prior information, and placing intended emphasis where readers expect closure. They explicitly describe these as principles rather than rigid rules; passive voice and long sentences are not automatically errors. Use these diagnostics when a reader loses the thread, without forcing every sentence into one shape. [Gopen and Swan, 1990, original article retyped and posted with permission](https://courses.washington.edu/b572/public/GopenSwan.pdf).
+- **Organize around the argument.** Mensh and Kording recommend paragraph-scale context, content, and conclusion, grouping related points and using parallel structure for comparable ideas. Their editorial also defends repeating the same term for the same concept: stylistic synonym changes can falsely suggest a scientific distinction. Treat their structure as a useful drafting option, especially for empirical arguments, rather than a compulsory paragraph template. [PLOS Computational Biology editorial, 2017, Rules 3–4 and 7–10](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619).
+- **Use domain nomenclature and manageable abbreviations.** Ehrhart and Evelo recommend consistent identifiers and terminology, a small useful set of abbreviations, independent introduction in abstract and main text, and enough definitions for displays read separately. The advice addresses communication and presentation, not proof that a manuscript's research is sound. [PLOS Computational Biology editorial, 2021, Rules 3–4](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008938).
+- **Separate house rules from defaults.** PLOS ONE requires first-use definitions, minimal abbreviations, and at least three occurrences for nonstandard abbreviations. This threshold is a PLOS ONE instruction, not a general law of scientific writing. [PLOS ONE submission guidelines, Abbreviations](https://journals.plos.org/plosone/s/submission-guidelines#loc-abbreviations).
+- **Check independently readable components.** JMIR's current house guidance explicitly repeats abbreviation expansion at first mention in the main text after abstract introduction, with exceptions and display-specific instructions. It also says authors need not conform to journal style at initial submission because professional copyediting follows. Apply requirements at their actual stage. [JMIR House Style and Editorial Guidelines, updated August 28, 2026, introduction and Section 5](https://support.jmir.org/hc/en-us/articles/360019504191-JMIR-House-Style-and-Editorial-Guidelines).
+
+## A practical clarity pass
+
+The following decision rules operationalize those principles; they are editorial inferences.
+
+1. **Lock meaning before rewriting.** Record actor, action, object, comparator, population/task, conditions, units, numbers, uncertainty, negation, and causal status. A smoother sentence fails if any field changes. Keep a qualifier beside the claim it restricts.
+2. **Explain a necessary term once, then use it consistently.** Ask whether an unfamiliar reader needs this distinction to interpret the method or result. If yes, retain the technical term and add a short operational definition or example. If no, replace ornamental terminology with the actual action. Do not simplify away distinctions such as prediction versus diagnosis, relative versus metric depth, or held-out evaluation versus external validation.
+3. **Untangle overloaded labels.** If “efficiency,” “robustness,” “generalization,” or “significance” can mean several things, state the measured quantity and evaluation conditions. A word-level checker should ask for meaning, rather than automatically replace the word. “Significant” requires clarification about statistical or practical meaning when ambiguous.
+4. **Give each paragraph a job.** Write a private one-sentence purpose. Identify the question/context, evidence or reasoning, and bounded takeaway. Split only when the paragraph has independently useful jobs; combine fragments when splitting separates evidence from its necessary qualification. A conclusion may appear first when the reader needs it to interpret subsequent detail.
+5. **Repair dependencies before shortening.** Find each “this,” “it,” “former,” and “respectively.” If two antecedents are plausible, name the referent. Break a noun stack into relationships: what transforms what, using which input, for which output? Bring a buried verb forward when a long insertion obscures the action.
+6. **Make connections explicit.** Use “because” only for a supported reason, “therefore” only when the inference follows, and “however” for an actual contrast. Replace a missing logical step with an explanation or flag missing evidence; a transition word cannot supply the step.
+7. **Choose voice for agency and emphasis.** Name the actor when responsibility or experimental choices matter. Passive voice can preserve the current subject when the procedure or object is the point. Avoid a global passive-voice ban, prohibited-word list, sentence-length quota, or Flesch/grade target. Such heuristics can damage necessary technical detail and are not this workflow's acceptance criteria.
+8. **Audit globally after local edits.** Compare the title, abstract, introduction, method definitions, results, discussion, captions, and supplement. Reconcile changed labels, dataset versions, endpoint names, metric direction, units, sample definitions, and certainty. Search findings are candidates for contextual review, not proof of error.
+
+## Jargon and terminology ledger
+
+Maintain one ledger with **concept ID, canonical term, operational definition, permitted aliases, disallowed variants, first definition in abstract/body, display definitions, and owner/status**. Record authority/version for formal nomenclature. An author can approve a technical distinction; a style agent should not invent one. The rows below are illustrative choices for hypothetical projects, not universal definitions.
+
+| Concept ID / canonical term | Definition in this project | Permitted aliases | Disallowed variants and reason |
+|---|---|---|---|
+| T01 / validation set | Set used to choose model settings | development set, only if explicitly equated | test set: would conceal selection access |
+| T02 / inference latency | Elapsed inference time per image under the specified hardware, batch size, and preprocessing protocol | latency after definition | efficiency or speed alone: leaves quantity ambiguous |
+| T03 / external validation cohort | Participants from the named second institution, excluded from model development | external cohort after definition | independent cohort unless the asserted independence is justified |
+| T04 / relative depth | Depth representation lacking the metric scale required by the stated task definition | none unless mathematically defined | metric depth: different output claim |
+
+Permit a shortened label only where its referent remains unambiguous. Preserve deliberate technical repetition. Flag one term with conflicting definitions, one concept with unexplained labels, or a symbol that changes meaning. Do not flag every grammatical variation as a substantive inconsistency.
+
+Treat the abstract and body as separate definition scopes. Expand an unfamiliar acronym at first use in each, unless the venue's documented exception applies. Check captions/tables independently according to venue rules. A glossary supplements first-use explanations; it does not automatically replace them. Remove a newly coined acronym when it saves little reading effort. Preserve official model names and standardized symbols according to the relevant authority.
+
+## Blind-reader teach-back protocol
+
+This is an editorial diagnostic inspired by reader-centered guidance, **not a validated comprehension test**.
+
+1. Freeze a draft version and an author-approved claim/evidence ledger. Give a reader only the actual intended reading packet: first title/abstract, then introduction and key figure, then the full relevant methods/results. Hide the author's intended explanation and other agents' critiques. A specialist assesses technical intelligibility; an adjacent-field reader assesses cross-field access. Never substitute confidential peer-review material without authorization and applicable policy compliance.
+2. At each stage ask the reader to state: **question** (what is being asked and why), **mechanism** (what the method changes and how it is proposed to work), **evidence** (what comparison/result supports which claim), and **scope** (tasks/populations, conditions, uncertainty, and what remains unshown). “Not recoverable from this packet” is a valid response; an abstract need not contain the full implementation.
+3. Require a supporting sentence, figure/table locator, or an explicit absence for each answer. Also request the phrase that caused uncertainty. The reader must not repair missing facts from outside knowledge. Proposed mechanisms must remain proposed; absent mechanisms must remain absent.
+4. Compare the teach-back with the ledger. Record **intended meaning; reader interpretation; exact draft locator/phrase; omitted or conflicting condition; consequence; proposed repair**. Classify as matched, partially recoverable, not recoverable, or contradicted. Agreement without cited evidence does not establish scientific correctness.
+5. Fix consequential mismatches first: a causal interpretation of association, wrong comparator, wrong input access, wrong population, or a broader guarantee. Explain the missing dependency before polishing wording. Re-run a fresh reader on materially revised passages without revealing the expected answer.
+6. Finish when principal claims are recovered with their conditions, or record unresolved mismatches and missing evidence. Do not average away a serious mismatch with a numerical readability score.
+
+**Synthetic mismatch record:** Intended: lower latency at batch size one. Reader: lower compute at all batch sizes. Trigger: “Our method is more efficient” in abstract sentence 3; Table 2 reports latency only at batch size one. Consequence: unsupported resource and workload scope. Repair: identify inference latency, hardware, and batch size next to the claim. This is an original invented example, not a finding about a published paper.
+
+## Five original synthetic before/after examples
+
+These examples are invented for editing practice. The after versions preserve the supplied facts and certainty; they are not research evidence.
+
+1. **Expose the action.** Before: “An evaluation of the model on 300 held-out images was performed by us.” After: “We evaluated the model on 300 held-out images.” No sample or evaluation change is implied.
+2. **Retain the condition.** Before: “For images with depth labels, which were available only at the second site, we computed absolute error.” After: “We computed absolute error only for images with depth labels; those labels were available only at the second site.” The restriction stays visible.
+3. **Preserve uncertainty and causal status.** Before: “In this observational cohort, higher exposure was associated with lower symptom scores, although residual confounding cannot be excluded.” After: “Higher exposure was associated with lower symptom scores in this observational cohort; residual confounding cannot be excluded.” This edit does not turn association into benefit.
+4. **Preserve a technical distinction.** Before: “The encoder produces features. These representations enter the classifier. Here, representations refers to the encoder's features.” After: “The encoder produces features, which enter the classifier.” A redundant alias disappears without changing the defined object.
+5. **Keep evidence beside its limit.** Before: “The mean Dice score was 0.82 on 40 external cases. A confidence interval was not estimated.” After: “On 40 external cases, the mean Dice score was 0.82; a confidence interval was not estimated.” Do not invent uncertainty, significance, clinical utility, or a wider population to improve the sentence.
+
+## Limits of this reference
+
+Five primary/editorial sources were inspected for relevant passages on October 30, 2026. This is a purposive guidance collection, not a systematic review or an empirical estimate of which prose increases acceptance. The original Gopen–Swan article was read through a permission-posted retyped copy. Venue pages may change; recheck target-year instructions. These checks diagnose communication and consistency while separate domain and evidence reviews assess truth, novelty, design, and reproducibility.

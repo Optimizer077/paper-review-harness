@@ -1,0 +1,23 @@
+{
+  "release": "aggressive-v1",
+  "local_tests": 122,
+  "public_portable_tests": 98,
+  "browser_cli_scenarios": 176,
+  "browser_cli_mismatches": 0,
+  "legacy_repository_commands_passed": 14,
+  "corpus_records": 300,
+  "cutoff_year": 2022,
+  "scoring_scope": "Fictional arithmetic and software invariants; not real-manuscript calibration.",
+  "toolkit_self_assessment": {
+    "raw": 83.5,
+    "effective": 59,
+    "readiness": "needs_revision_or_evidence",
+    "limiting_domain": "Independent and external validation: 55/100"
+  },
+  "download": {
+    "file": "downloads/paper-review-lab.zip",
+    "sha256": "5d9491590087a6fed60bcc42d8525680100efbe0a90ef98851164f58880fe5a9",
+    "bytes": 264536
+  },
+  "evidence": "tests/check_site_parity.py and toolkit/validation; existing repository checks remain passing."
+}

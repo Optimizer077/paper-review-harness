@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "artifact_type": "paper-writing toolkit",
+  "evaluation_date": "2026-10-30",
+  "evaluator": "coordinating agent; editorial assessment informed by independent specialist reports",
+  "critical_blockers": [],
+  "criteria": [
+    {
+      "id": "coverage",
+      "weight": 15,
+      "rating": 4,
+      "evidence": [
+        "paper-writing/SKILL.md; references/section-craft.md; clarity-and-consistency.md; evidence-review.md"
+      ],
+      "notes": "Covers requested scientific sections and writing/review tasks."
+    },
+    {
+      "id": "evidence-integrity",
+      "weight": 20,
+      "rating": 3,
+      "evidence": [
+        "paper-writing/references/sources.json; research/historical-2022/*-inspection.json; independent-audit.md"
+      ],
+      "notes": "Source access and inspection limits explicit; no exhaustive citation or scientific-validity audit."
+    },
+    {
+      "id": "concept-consistency",
+      "weight": 15,
+      "rating": 3,
+      "evidence": [
+        "references/clarity-and-consistency.md; scripts/paper_harness.py; validation/test_packet_invariants.py"
+      ],
+      "notes": "Definitions, aliases and global claim guardrails are inspectable; semantic equivalence needs reasoning."
+    },
+    {
+      "id": "reader-understanding",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        "references/review-protocol.md; assets/review-roles.json; blind packet isolation regressions"
+      ],
+      "notes": "Blind first-stage packet and later comparison context are separate; actual blinding still relies on reviewer conduct."
+    },
+    {
+      "id": "venue-design-adaptation",
+      "weight": 10,
+      "rating": 3,
+      "evidence": [
+        "paper-writing/references/venue-profiles.md; historical-2022/summary.json; per-journal ISSN/date checks"
+      ],
+      "notes": "Dated venue and design routes supported; current rules must be refreshed for a real submission."
+    },
+    {
+      "id": "harness-reliability",
+      "weight": 15,
+      "rating": 4,
+      "evidence": [
+        "validation/test_paper_harness.py; test_packet_invariants.py; test_independent_harness.py; test_scoring.py"
+      ],
+      "notes": "Observable regressions and command smoke checks verify the documented bounded behavior; not a complete TeX parser."
+    },
+    {
+      "id": "provenance-reproducibility",
+      "weight": 10,
+      "rating": 4,
+      "evidence": [
+        "research/historical-2022/papers.jsonl; summary.json; shards/*-log.jsonl; abstract-fidelity-corrections.json"
+      ],
+      "notes": "300 eligible historical records, 238 hash-verified bodies, explicit source selection and unavailable-body status."
+    },
+    {
+      "id": "validation-depth",
+      "weight": 5,
+      "rating": 3,
+      "evidence": [
+        "research/historical-2022/independent-audit.md; cli-review.md; validation/test_historical_corpus.py; prior synthetic forward test"
+      ],
+      "notes": "Independent synthetic forward test and package audit; real-manuscript prospective evaluation remains unperformed."
+    }
+  ],
+  "revision": "historical-300-2022",
+  "evaluation_scope": "Updated toolkit and its validated historical corpus; preserved editorial anchors, no score increase merely for collecting more papers."
+}
